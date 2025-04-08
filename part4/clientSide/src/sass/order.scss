@@ -1,0 +1,69 @@
+@import 'styleAll';
+
+body{
+    color: $text-color;
+    font-family: $font-family;
+}
+
+.order-container {
+    padding: 1.5rem;
+    background-color: $bg-color;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: $text-color;
+}
+
+.order-details {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: $text-color;
+}
+
+.order-details p {
+    margin: 0.5rem 0;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: $border-color;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: $hover-color
+}
+
+ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+li strong {
+    color: $bg-color;
+}

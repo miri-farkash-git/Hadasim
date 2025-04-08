@@ -1,0 +1,104 @@
+@import 'styleAll';
+
+
+body{
+    color: $text-color;
+    font-family: $font-family;
+}
+
+.login-form, .sign-up-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: $bg-color;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .input-group {
+        margin-bottom: 1.5rem;
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid $border-color;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+
+            &:focus {
+                border-color: $hover-color;
+                outline: none;
+            }
+        }
+
+        p {
+            color: $error-color;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .products {
+        margin-bottom: 1.5rem;
+
+        input {
+            width: calc(50% - 10px);
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid $border-color;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+
+            &:focus {
+                border-color: $hover-color;
+                outline: none;
+            }
+        }
+
+        p {
+            color: $error-color;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .submit-btn, input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: $border-color;
+        border: none;
+        color: $bg-color;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: $border-color;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}
